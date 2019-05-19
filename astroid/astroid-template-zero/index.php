@@ -89,7 +89,7 @@ $template->loadTemplateCSS('custom.css');
 </head>
 <body class="<?php echo $template->bodyClass($template->language, $template->direction); ?>">
    <?php
-   if ($template->params->get('developemnt_mode', 0)) {
+   if ($template->params->get('development_mode', 0)) {
       $template->loadLayout('comingsoon');
    } else {
       $template->loadLayout('preloader');
